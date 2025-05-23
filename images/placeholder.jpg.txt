@@ -1,0 +1,13 @@
+Este archivo es un marcador de posición para las imágenes del carrusel.
+
+Para que el carrusel funcione correctamente, debes:
+
+1. Crear imágenes con nombres "imagen1.jpg", "imagen2.jpg", etc. para cada día
+2. Colocarlas en las carpetas correspondientes:
+   - images/dia1/
+   - images/dia2/
+   - images/dia3/
+   - images/dia4/
+   - images/dia5/
+
+Puedes usar fotografías reales de la actualización de la máquina CWS para cada día.

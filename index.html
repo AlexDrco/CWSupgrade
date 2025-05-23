@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWS 3978 Controls Upgrade</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <h1>CWS 3978 <span class="highlight">Controls Upgrade</span></h1>
+        </div>
+        <p class="subtitle">Progress report of the sterilizer machine upgrade</p>
+    </header>
+
+    <main>
+        <section class="timeline-section">
+            <h2>Timeline</h2>
+            <div class="timeline-container" id="timeline">
+                <!-- The timeline will be created dynamically from JavaScript -->
+            </div>
+        </section>
+
+        <section class="content-container">
+            <div class="details-panel" id="details-panel">
+                <h2 id="day-title">Select a day to view details</h2>
+                <div class="date" id="day-date"></div>
+                <div class="details-content" id="details-content">
+                    <p class="select-prompt">Click on a day in the timeline to see the progress details.</p>
+                </div>
+            </div>
+
+            <div class="carousel-panel">
+                <h2>Progress Images</h2>
+                <div class="carousel-container">
+                    <div class="carousel" id="image-carousel">
+                        <!-- Images will be loaded dynamically from JavaScript -->
+                    </div>
+                    <div class="carousel-controls">
+                        <button id="prev-btn" class="carousel-btn"><i class="fas fa-chevron-left"></i></button>
+                        <div class="carousel-indicators" id="carousel-indicators">
+                            <!-- Los indicadores se cargarán dinámicamente -->
+                        </div>
+                        <button id="next-btn" class="carousel-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CWS Upgrade Project. All rights reserved.</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

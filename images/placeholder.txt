@@ -1,0 +1,12 @@
+This file is a placeholder for carousel images.
+
+For the carousel to work correctly, you must:
+
+1. Create images with names "imagen1.jpg", "imagen2.jpg", etc. for each day
+2. Place them in the corresponding folders:
+   - images/dia1/
+   - images/dia2/
+   - images/dia3/
+   - etc.
+
+You can include up to 10 images per day. The system will automatically display all images it finds.
