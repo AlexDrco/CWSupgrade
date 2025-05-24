@@ -132,7 +132,7 @@ const projectData = {
                 <p>Verify UPS backup functioning, new batteries set, ready for install.</p>
                 
                 <h3>Next Steps</h3>
-                <p>Main panel wiring completed , schedule activities on track, the equipment will be powered up for initial testing and software installation on Monday..</p>
+                <p>Main panel wiring completed , schedule activities on track, the equipment will be powered up for initial testing and software installation next Monday..</p>
             `,
             progress: "50%",
             imageFolder: "dia5"
