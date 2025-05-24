@@ -117,7 +117,7 @@ const projectData = {
             title: "New Hardware Installation Part 3",
             description: `
                <h3>Control System Installation</h3>
-                <p>Today the installation of the new control equipment continues</p>
+                <p>Impresive progress in the main panel wiring, back on track </p>
                 
                 <h3>Installed Components</h3>
                 <ul>
@@ -125,13 +125,14 @@ const projectData = {
                     <li>Expansion modules for profinet network</li>
                     <li>S7-1500 expansion modules installed</li>
                     <li>New HMI's installed in the dryer area</li>
+                    <li>Main panel wiring almost completed</li>
                 </ul>
                 
-                <h3>Implemented Improvements</h3>
-                <p>The new system includes many benefits and capabilities as well as a new generation of more reliable control and communications network.</p>
+                <h3>Challenges on this stage</h3>
+                <p>Verify UPS backup functioning, new batteries set, ready for install.</p>
                 
                 <h3>Next Steps</h3>
-                <p>Depending on the progress made in the equipment installation during friday and saturday, the equipment will be powered up and the software installation will begin on Monday..</p>
+                <p>Main panel wiring completed , schedule activities on track, the equipment will be powered up for testing and software installation on Monday..</p>
             `,
             progress: "50%",
             imageFolder: "dia5"
