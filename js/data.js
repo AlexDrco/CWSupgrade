@@ -176,7 +176,7 @@ const projectData = {
         {
             id: 8,
             date: "2025-05-27T12:00:00",
-            title: "Security and alarms testing",
+            title: "Testing Devices",
             description: `
             
             `,
@@ -186,7 +186,7 @@ const projectData = {
         {
             id: 9,
             date: "2025-05-28T12:00:00",
-            title: "Final Validation",
+            title: "Security and alarms testing",
             description: `
         
             `,
@@ -196,7 +196,7 @@ const projectData = {
         {
             id: 10,
             date: "2025-05-29T12:00:00",
-            title: "Completion and Delivery",
+            title: " Final Validation, Completion and Delivery",
             description: `
        
             `,
