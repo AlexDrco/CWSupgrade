@@ -157,7 +157,7 @@ const projectData = {
         {
             id: 7,
             date: "2025-05-26T12:00:00",
-            title: "Software installation testing",
+            title: "New Hardware Installation Part 4",
             description: `
                 <p>Today the installation of the new control equipment continues..</p>
                 
