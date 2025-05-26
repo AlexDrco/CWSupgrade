@@ -117,7 +117,7 @@ const projectData = {
             title: "New Hardware Installation Part 3",
             description: `
                <h3>Control System Installation</h3>
-                <p>Impresive progress in the main panel wiring, back on track </p>
+                <p>Significative progress in the main panel wiring, back on track </p>
                 
                 <h3>Installed Components</h3>
                 <ul>
@@ -132,7 +132,7 @@ const projectData = {
                 <p>Verify UPS backup functioning, new batteries set, ready for install.</p>
                 
                 <h3>Next Steps</h3>
-                <p>Main panel wiring completed , schedule activities on track, the equipment will be powered up for initial testing and software installation next Monday..</p>
+                <p>Main panel wiring almost completed , schedule activities on track, the equipment will be powered up for initial testing and software installation next Monday..</p>
             `,
             progress: "50%",
             imageFolder: "dia5"
@@ -159,9 +159,18 @@ const projectData = {
             date: "2025-05-26T12:00:00",
             title: "Software installation testing",
             description: `
-            
+                <p>Today the installation of the new control equipment continues..</p>
+                
+                <h3>Activities..</h3>
+                <p>The installation of equipment in the internal panels is being carried out today, network cabling, installation of touch panels for the dryer area, the challenge today was to begin initial power-on tests, unfortunately this stage has not been possible, a meeting will be scheduled with the Syntegon team to have the details of the delay that could affect the calendar of activities for this project..</p>
+                
+                <h3>Challenges on this stage</h3>
+                <p>Check with Syntegon for any possible delay in the schedule of activities.</p>
+                
+                <h3>Next Steps</h3>
+                <p>The equipment should be powered up for testing and the software installation hopefully tomorrow afternoon.</p>
             `,
-            progress: "70%",
+            progress: "60%",
             imageFolder: "dia7"
         },
         {
