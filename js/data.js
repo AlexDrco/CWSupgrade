@@ -188,9 +188,10 @@ const projectData = {
                     <li>Graph station installed</li>
                     <li>Verifying network performance</li>
                     <li>Client data restore</li>
+                    <li>Initial software testing</li>
                 </ul>
                 <h3>Challenges on this stage</h3>
-                <p>Test each device on the network, debuging stage on wiring.</p>
+                <p>Test each device on the network, debuging stage, wiring verification.</p>
                 
                 <h3>Next Steps</h3>
                 <p>The debug stage and device test execution time will determine how many days of delay will be added. Tomorrow, May 28, there will be a meeting with Syntegon to discuss this delay point and how our schedule will be affected.</p>
