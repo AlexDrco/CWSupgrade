@@ -176,11 +176,26 @@ const projectData = {
         {
             id: 8,
             date: "2025-05-27T12:00:00",
-            title: "Testing Devices",
+            title: "It's Alive!! Testing devices",
             description: `
-            
+                <p>The switch is ON, today testing devices stage began</p>
+                
+                <h3>Device testing with the equipment powered on began today</h3>
+                <ul>
+                    <li>Verifying communication with main controller S7-1500</li>
+                    <li>Verifying communication with remote profinet network nodes</li>
+                    <li>HMI PC Installed </li>
+                    <li>Graph station installed</li>
+                    <li>Verifying network performance</li>
+                    <li>Client data restore</li>
+                </ul>
+                <h3>Challenges on this stage</h3>
+                <p>Test each device on the network, debuging stage on wiring.</p>
+                
+                <h3>Next Steps</h3>
+                <p>The debug stage and device test execution time will determine how many days of delay will be added. Tomorrow, May 28, there will be a meeting with Syntegon to discuss this delay point and how our schedule will be affected.</p>
             `,
-            progress: "80%",
+            progress: "70%",
             imageFolder: "dia8"
         },
         {
