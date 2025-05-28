@@ -202,11 +202,27 @@ const projectData = {
         {
             id: 9,
             date: "2025-05-28T12:00:00",
-            title: "Security and alarms testing",
+            title: "Testing Devices Part 2",
             description: `
-        
+                <p>Testing devices and debugging stage continues</p>
+                
+                <h3>Device testing and debugging </h3>
+                <ul>
+                    <li>Alarms testing and clearing</li>
+                    <li>Verifying communication with main controller S7-1500</li>
+                    <li>Verifying communication with remote profinet network nodes</li>
+                    <li>HMI PC Installed </li>
+                    <li>Graph station installed</li>
+                    <li>Verifying network performance</li>
+                    <li>Client data restore</li>
+                </ul>
+                <h3>Challenges on this stage</h3>
+                <p>Test each device on the network, debugging stage, alarms being tested and cleared.</p>
+                
+                <h3>Next Steps</h3>
+                <p>According with Syntegon meeting today, We will have 4 days of delay over the original schedule. So, Please take the necessary measures regarding this delay in the schedule.</p>
             `,
-            progress: "90%",
+            progress: "70%",
             imageFolder: "dia9"
         },
         {
