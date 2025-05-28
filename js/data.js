@@ -214,7 +214,7 @@ const projectData = {
                     <li>HMI PC Installed </li>
                     <li>Graph station installed</li>
                     <li>Verifying network performance</li>
-                    <li>Client data restore</li>
+                    <li>No more red lights in communication network</li>
                 </ul>
                 <h3>Challenges on this stage</h3>
                 <p>Test each device on the network, debugging stage, alarms being tested and cleared.</p>
