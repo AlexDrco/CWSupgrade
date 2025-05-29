@@ -228,11 +228,23 @@ const projectData = {
         {
             id: 10,
             date: "2025-05-29T12:00:00",
-            title: " Final Validation, Completion and Delivery",
+            title: "Testing Devices Part 3",
             description: `
-       
+                <p>Testing devices and debugging stage continues</p>
+                
+                <h3>Devices testing and debugging </h3>
+                <ul>
+                    <li>Still working in clearing Alarms</li>
+                    <li>Confined space permit granted</li>
+                    <li>WCS chamber sensor verification</li>
+                </ul>
+                <h3>Challenges on this stage</h3>
+                <p>Test each device on the system, debugging stage, alarms being tested and cleared.</p>
+                
+                <h3>Next Steps</h3>
+                <p>Please schedule your activities according with the 3 days of delay over the original schedule.</p>
             `,
-            progress: "100%",
+            progress: "75%",
             imageFolder: "dia10"
         }
     ]
