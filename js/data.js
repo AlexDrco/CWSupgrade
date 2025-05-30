@@ -247,7 +247,7 @@ const projectData = {
             progress: "75%",
             imageFolder: "dia10"
         },
-        {
+       {
             id: 11,
             date: "2025-05-30T12:00:00",
             title: "PRE-qualification tests Being performed",
@@ -270,6 +270,16 @@ const projectData = {
             progress: "80%",
             imageFolder: "dia11"
         },
+        {
+            id: 12,
+            date: "2025-05-31T12:00:00",
+            title: "Cycle tests as part of IQ stage",
+            description: `
+        
+            `,
+            progress: "90%",
+            imageFolder: "dia12"
+        },    
     ]
 };
 
