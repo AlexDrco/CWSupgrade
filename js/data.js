@@ -246,7 +246,30 @@ const projectData = {
             `,
             progress: "75%",
             imageFolder: "dia10"
-        }
+        },
+        {
+            id: 11,
+            date: "2025-05-30T12:00:00",
+            title: "PRE-qualification tests Being performed",
+            description: `
+           <p>Prequalification in process to prepare machine for IQ on Monday</p>
+                
+                <h3>Devices testing and debugging </h3>
+                <ul>
+                    <li>Alarms were cleared!!</li>
+                    <li>Confined space permit granted</li>
+                    <li>WCS chamber Temperature sensors verification</li>
+                    <li>Cyles for Prequalification stage will begin</li>
+                </ul>
+                <h3>Challenges on this stage</h3>
+                <p>Pre-qualification stage TODAY, With the progress shown today, the delay in the schedule has been considerably reduced to only 1 or 2 days.</p>
+                
+                <h3>Next Steps</h3>
+                <p>IQ will be performed on Monday</p>
+            `,
+            progress: "80%",
+            imageFolder: "dia11"
+        },
     ]
 };
 
