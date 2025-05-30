@@ -262,16 +262,16 @@ function getDayImages(dayId) {
     
     // Captions predeterminados para las imágenes
     const defaultCaptions = [
-        "Vista general del proceso de actualización",
-        "Detalle de los componentes instalados",
-        "Equipo técnico realizando ajustes",
-        "Resultados de las pruebas realizadas",
-        "Comparativa antes y después de la actualización",
-        "Calibración de sensores y equipos",
-        "Pruebas de funcionamiento del sistema",
-        "Documentación del proceso",
-        "Capacitación del personal",
-        "Finalización de la etapa"
+        "Click on image for a larger view",
+        "Click on image for a larger view",
+        "Click on image for a larger view",
+        "Click on image for a larger view",
+        "Click on image for a larger view",
+        "Click on image for a larger view",
+        "Click on image for a larger view",
+        "Click on image for a larger view",
+        "Click on image for a larger view",
+        "Click on image for a larger view"
     ];
     
     // Crear un array con hasta 10 posibles imágenes
