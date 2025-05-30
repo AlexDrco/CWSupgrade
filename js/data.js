@@ -234,7 +234,7 @@ const projectData = {
                 
                 <h3>Devices testing and debugging </h3>
                 <ul>
-                    <li>Still working in clearing Alarms</li>
+                    <li>Very good progress in clearing Alarms</li>
                     <li>Confined space permit granted</li>
                     <li>WCS chamber sensor verification</li>
                 </ul>
