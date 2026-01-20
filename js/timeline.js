@@ -1,4 +1,12 @@
 // Funcionalidad para la línea de tiempo
+
+// ===== HERRAMIENTA DE TESTING =====
+// Para probar con diferentes fechas sin cambiar la fecha del sistema,
+// descomenta la línea TEST_DATE y establece la fecha que desees probar.
+// Ejemplo: const TEST_DATE = new Date('2026-02-06'); // Ver todos los 18 días
+// Usa null para usar la fecha actual del sistema (por defecto)
+const TEST_DATE = null;
+
 document.addEventListener('DOMContentLoaded', function() {
     const timelineContainer = document.getElementById('timeline');
     
@@ -7,12 +15,24 @@ document.addEventListener('DOMContentLoaded', function() {
         // Limpiar el contenedor
         timelineContainer.innerHTML = '';
         
+        // Obtener la fecha actual sin hora
+        // Si TEST_DATE está definido, usar esa fecha para testing
+        const today = TEST_DATE ? new Date(TEST_DATE) : new Date();
+        today.setHours(0, 0, 0, 0);
+        
+        // Filtrar los días que son hasta hoy inclusive
+        const visibleDays = projectData.days.filter(day => {
+            const dayDate = new Date(day.date);
+            dayDate.setHours(0, 0, 0, 0);
+            return dayDate <= today;
+        });
+        
         // Crear el elemento de línea de tiempo
         const timelineElement = document.createElement('div');
         timelineElement.className = 'timeline';
         
-        // Asegurar que la línea de tiempo tenga suficiente ancho para todos los días
-        const totalDays = projectData.days.length;
+        // Asegurar que la línea de tiempo tenga suficiente ancho para todos los días visibles
+        const totalDays = visibleDays.length;
         // El ancho total debe considerar el ancho de cada día (100px) más los márgenes (2rem = ~32px)
         const timelineWidth = totalDays * 132;
         // Establecer el ancho de la línea de tiempo
@@ -21,8 +41,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Agregar el elemento de línea de tiempo al contenedor
         timelineContainer.appendChild(timelineElement);
         
-        // Crear un elemento para cada día en los datos
-        projectData.days.forEach(day => {
+        // Crear un elemento para cada día visible en los datos
+        visibleDays.forEach(day => {
             // Crear el elemento del día
             const dayElement = document.createElement('div');
             dayElement.className = 'timeline-day';
@@ -68,14 +88,14 @@ document.addEventListener('DOMContentLoaded', function() {
             timelineElement.appendChild(dayElement);
         });
         
-        // Seleccionar el primer día por defecto e inicializar el carrusel
-        if (projectData.days.length > 0) {
-            // Seleccionar el primer día
-            selectDay(projectData.days[0].id);
+        // Seleccionar el primer día visible por defecto e inicializar el carrusel
+        if (visibleDays.length > 0) {
+            // Seleccionar el último día visible (el más reciente)
+            selectDay(visibleDays[visibleDays.length - 1].id);
             
             // Asegurarse de que el carrusel se inicialice correctamente
             if (typeof updateCarousel === 'function') {
-                updateCarousel(projectData.days[0].id);
+                updateCarousel(visibleDays[visibleDays.length - 1].id);
             }
         }
     }
