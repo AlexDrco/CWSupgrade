@@ -4,7 +4,7 @@ const projectData = {
     days: [
         {
             id: 1,
-            date: "2025-05-20T12:00:00",
+            date: "2026-01-20T12:00:00",
             title: "Project Start",
             description: `
                 <h3>Initial Assessment</h3>
@@ -31,13 +31,13 @@ const projectData = {
                     
                 </ol>
             `,
-            progress: "10%",
+            progress: "11%",
             // Las imágenes se cargarán desde la carpeta correspondiente
             imageFolder: "dia1"
         },
         {
             id: 2,
-            date: "2025-05-21T12:00:00",
+            date: "2026-01-21T12:00:00",
             title: "Component Disassembly",
             description: `
                 <h3>Control System Disassembly</h3>
@@ -58,12 +58,12 @@ const projectData = {
                 <h3>Challenges Encountered</h3>
                 <p>The main control door was removed to modify the cavity where the new HMI PC will be installed..</p>
             `,
-            progress: "20%",
+            progress: "11%",
             imageFolder: "dia2"
         },
         {
             id: 3,
-            date: "2025-05-22T12:00:00",
+            date: "2026-01-22T12:00:00",
             title: "New Hardware Installation Part 1",
             description: `
                 <h3>Control System Installation</h3>
@@ -83,12 +83,12 @@ const projectData = {
                 <h3>Next Steps</h3>
                 <p>Tomorrow we will continue the installation and identification of the new controls wiring.</p>
             `,
-            progress: "30%",
+            progress: "22%",
             imageFolder: "dia3"
         },
         {
             id: 4,
-            date: "2025-05-23T12:00:00",
+            date: "2026-01-23T12:00:00",
             title: "New Hardware Installation Part 2",
             description: `
                 <h3>Control System Installation</h3>
@@ -108,12 +108,12 @@ const projectData = {
                 <h3>Next Steps</h3>
                 <p>Depending on the progress made in the equipment installation during friday and saturday, the equipment will be powered up and the software installation will begin on Monday..</p>
             `,
-            progress: "40%",
+            progress: "22%",
             imageFolder: "dia4"
         },
         {
             id: 5,
-            date: "2025-05-24T12:00:00",
+            date: "2026-01-24T12:00:00",
             title: "New Hardware Installation Part 3",
             description: `
                <h3>Control System Installation</h3>
@@ -134,12 +134,12 @@ const projectData = {
                 <h3>Next Steps</h3>
                 <p>Main panel wiring almost completed , schedule activities on track, the equipment will be powered up for initial testing and software installation next Monday..</p>
             `,
-            progress: "50%",
+            progress: "33%",
             imageFolder: "dia5"
         },
         {
             id: 6,
-            date: "2025-05-25T12:00:00",
+            date: "2026-01-25T12:00:00",
             title: "Weekend - No Work Scheduled",
             description: `
                 <h3>Sunday - No Work Day</h3>
@@ -151,12 +151,12 @@ const projectData = {
                 <h3>Next Steps</h3>
                 <p>Work will continue on Monday with the Software installation phase, focusing on implementing the new control interface and conducting usability tests.</p>
             `,
-            progress: "50%",
+            progress: "33%",
             imageFolder: "dia6"
         },
         {
             id: 7,
-            date: "2025-05-26T12:00:00",
+            date: "2026-01-26T12:00:00",
             title: "New Hardware Installation Part 4",
             description: `
                 <p>Today the installation of the new control equipment continues..</p>
@@ -170,12 +170,12 @@ const projectData = {
                 <h3>Next Steps</h3>
                 <p>The equipment should be powered up for testing and the software installation hopefully tomorrow afternoon.</p>
             `,
-            progress: "60%",
+            progress: "44%",
             imageFolder: "dia7"
         },
         {
             id: 8,
-            date: "2025-05-27T12:00:00",
+            date: "2026-01-27T12:00:00",
             title: "It's Alive!! Testing devices",
             description: `
                 <p>The switch is ON, today testing devices stage began</p>
@@ -196,12 +196,12 @@ const projectData = {
                 <h3>Next Steps</h3>
                 <p>The debug stage and device test execution time will determine how many days of delay will be added. Tomorrow, May 28, there will be a meeting with Syntegon to discuss this delay point and how our schedule will be affected.</p>
             `,
-            progress: "70%",
+            progress: "44%",
             imageFolder: "dia8"
         },
         {
             id: 9,
-            date: "2025-05-28T12:00:00",
+            date: "2026-01-28T12:00:00",
             title: "Testing Devices Part 2",
             description: `
                 <p>Testing devices and debugging stage continues</p>
@@ -222,12 +222,12 @@ const projectData = {
                 <h3>Next Steps</h3>
                 <p>According with Syntegon meeting today, We will have 4 days of delay over the original schedule. So, Please take the necessary measures regarding this delay in the schedule.</p>
             `,
-            progress: "70%",
+            progress: "56%",
             imageFolder: "dia9"
         },
         {
             id: 10,
-            date: "2025-05-29T12:00:00",
+            date: "2026-01-29T12:00:00",
             title: "Testing Devices Part 3",
             description: `
                 <p>Testing devices and debugging stage continues</p>
@@ -244,12 +244,12 @@ const projectData = {
                 <h3>Next Steps</h3>
                 <p>Please schedule your activities according with the 3 days of delay over the original schedule.</p>
             `,
-            progress: "75%",
+            progress: "56%",
             imageFolder: "dia10"
         },
        {
             id: 11,
-            date: "2025-05-30T12:00:00",
+            date: "2026-01-30T12:00:00",
             title: "PRE-qualification tests Being performed",
             description: `
            <p>Prequalification in process to prepare machine for IQ on Monday</p>
@@ -267,19 +267,149 @@ const projectData = {
                 <h3>Next Steps</h3>
                 <p>IQ will be performed on Monday</p>
             `,
-            progress: "80%",
+            progress: "67%",
             imageFolder: "dia11"
         },
         {
             id: 12,
-            date: "2025-05-31T12:00:00",
+            date: "2026-01-31T12:00:00",
             title: "Cycle tests as part of IQ stage",
             description: `
         
             `,
-            progress: "90%",
+            progress: "67%",
             imageFolder: "dia12"
-        },    
+        },
+        {
+            id: 13,
+            date: "2026-02-01T12:00:00",
+            title: "IQ Completion",
+            description: `
+                <h3>Installation Qualification Complete</h3>
+                <p>The IQ stage has been successfully completed with all systems verified and functioning properly.</p>
+                
+                <h3>Verified Systems</h3>
+                <ul>
+                    <li>Main control system operational</li>
+                    <li>All sensors calibrated and verified</li>
+                    <li>Network communication stable</li>
+                    <li>HMI interfaces responsive</li>
+                </ul>
+                
+                <h3>Next Steps</h3>
+                <p>Proceeding to OQ (Operational Qualification) phase.</p>
+            `,
+            progress: "78%",
+            imageFolder: "dia13"
+        },
+        {
+            id: 14,
+            date: "2026-02-02T12:00:00",
+            title: "OQ Phase - Part 1",
+            description: `
+                <h3>Operational Qualification Begins</h3>
+                <p>Starting the OQ phase to verify all operational parameters and performance criteria.</p>
+                
+                <h3>Activities Performed</h3>
+                <ul>
+                    <li>Standard cycle execution tests</li>
+                    <li>Temperature and pressure monitoring</li>
+                    <li>Performance data collection</li>
+                </ul>
+                
+                <h3>Status</h3>
+                <p>All tests running within specifications.</p>
+            `,
+            progress: "78%",
+            imageFolder: "dia14"
+        },
+        {
+            id: 15,
+            date: "2026-02-03T12:00:00",
+            title: "OQ Phase - Part 2",
+            description: `
+                <h3>Operational Qualification Continues</h3>
+                <p>Continuation of operational tests with extended cycle durations and stress testing.</p>
+                
+                <h3>Test Results</h3>
+                <ul>
+                    <li>All cycles completed successfully</li>
+                    <li>Performance metrics within acceptable range</li>
+                    <li>System stability confirmed</li>
+                </ul>
+                
+                <h3>Status</h3>
+                <p>OQ phase progressing on schedule.</p>
+            `,
+            progress: "89%",
+            imageFolder: "dia15"
+        },
+        {
+            id: 16,
+            date: "2026-02-04T12:00:00",
+            title: "OQ Phase - Part 3",
+            description: `
+                <h3>Final OQ Testing</h3>
+                <p>Final validation tests and acceptance criteria verification.</p>
+                
+                <h3>Validation Checklist</h3>
+                <ul>
+                    <li>Performance parameters verified</li>
+                    <li>Safety systems validated</li>
+                    <li>Data logging confirmed</li>
+                    <li>User training materials completed</li>
+                </ul>
+                
+                <h3>Status</h3>
+                <p>Ready for PQ (Performance Qualification) phase.</p>
+            `,
+            progress: "89%",
+            imageFolder: "dia12"
+        },
+        {
+            id: 17,
+            date: "2026-02-05T12:00:00",
+            title: "PQ Phase - Performance Qualification",
+            description: `
+                <h3>Performance Qualification Phase</h3>
+                <p>Final validation phase with full operational cycles and documentation.</p>
+                
+                <h3>PQ Activities</h3>
+                <ul>
+                    <li>Extended performance testing</li>
+                    <li>Final documentation review</li>
+                    <li>System certification preparation</li>
+                    <li>Handover to operations team</li>
+                </ul>
+                
+                <h3>Status</h3>
+                <p>Near completion. Final validation in progress.</p>
+            `,
+            progress: "100%",
+            imageFolder: "dia12"
+        },
+        {
+            id: 18,
+            date: "2026-02-06T12:00:00",
+            title: "Project Completion - Delivery",
+            description: `
+                <h3>CWS 3979 Controls Upgrade Complete!</h3>
+                <p>The controls upgrade project has been successfully completed. The sterilizer is now operational with the new control system.</p>
+                
+                <h3>Project Summary</h3>
+                <ul>
+                    <li>New S7-1500 control system fully operational</li>
+                    <li>All qualifications completed and documented</li>
+                    <li>Staff trained on new interface</li>
+                    <li>System handed over to operations</li>
+                </ul>
+                
+                <h3>Final Status</h3>
+                <p>Project complete and ready for production use.</p>
+            `,
+            progress: "100%",
+            imageFolder: "dia12"
+        }
     ]
 };
 
