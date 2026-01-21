@@ -77,13 +77,15 @@ function createGanttChart(selectedDate = null) {
         // Parsear fecha seleccionada en zona horaria local para evitar desfases
         let selected;
         if (typeof selectedDate === 'string') {
-            const parts = selectedDate.split('T')[0].split('-');
+            const dateStr = selectedDate.includes('T') ? selectedDate.split('T')[0] : selectedDate;
+            const parts = dateStr.split('-');
             selected = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
         } else {
             selected = new Date(selectedDate);
             selected.setHours(0, 0, 0, 0);
         }
-        selectedOffset = Math.floor((selected - minDate) / (1000 * 60 * 60 * 24));
+        selectedOffset = Math.round((selected - minDate) / (1000 * 60 * 60 * 24));
+        console.log('Fecha seleccionada:', selectedDate, '-> offset:', selectedOffset, 'minDate:', minDate.toLocaleDateString(), 'selected:', selected.toLocaleDateString());
     }
     
     // Generar fechas para la cabecera (cada día)
