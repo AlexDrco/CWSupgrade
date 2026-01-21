@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/gantt.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -21,9 +22,17 @@
     <main>
         <section class="timeline-section">
             <h2>Timeline Jan/20 to Feb/06</h2>
-             <p class="timeline-instruction">Click on each day to see the progress</p>
+            <p class="timeline-instruction">Click on each day to see the progress</p>
             <div class="timeline-container" id="timeline">
                 <!-- The timeline will be created dynamically from JavaScript -->
+            </div>
+        </section>
+
+        <section class="gantt-section">
+            <h2><i class="fas fa-chart-gantt"></i> Activity Schedule</h2>
+            <p class="gantt-instruction">Visualization of activities, duration and execution dates</p>
+            <div id="gantt-container">
+                <!-- The Gantt chart will be created dynamically from JavaScript -->
             </div>
         </section>
 
@@ -61,6 +70,7 @@
 
     <script src="js/data.js"></script>
     <script src="js/timeline.js"></script>
+    <script src="js/gantt.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/main.js"></script>
 </body>
