@@ -1,0 +1,378 @@
+/* Estilos para el Gantt Chart - Estructura alineada */
+
+.gantt-section {
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin: 2rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gantt-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.gantt-instruction {
+    color: #777;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.gantt-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    overflow-x: auto;
+    padding: 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Encabezado de la línea de tiempo */
+.gantt-timeline-header-row {
+    display: flex;
+    gap: 0;
+    background-color: #fff;
+    border-bottom: 2px solid var(--primary-color);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.gantt-header-labels-space {
+    min-width: 150px;
+    flex-shrink: 0;
+    border-right: 2px solid var(--primary-color);
+    background-color: #fff;
+    height: 32px;
+}
+
+.gantt-date-header {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    flex: 1;
+}
+
+.gantt-date-cell {
+    width: 24px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: var(--primary-color);
+    border-right: 1px solid #ddd;
+    font-size: 0.65rem;
+    cursor: help;
+    flex-shrink: 0;
+}
+
+.gantt-date-cell.gantt-today {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 700;
+}
+
+.gantt-date-cell.gantt-selected {
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+}
+
+/* Contenedor de filas */
+.gantt-rows-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+/* Cada fila de actividad */
+.gantt-row {
+    display: flex;
+    gap: 0;
+    height: 36px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.gantt-row:hover {
+    background-color: #f5f9ff;
+}
+
+.gantt-row-label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0 0.6rem;
+    min-width: 150px;
+    flex-shrink: 0;
+    border-right: 2px solid #e0e0e0;
+    background-color: #fff;
+}
+
+.gantt-category-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    color: white;
+    font-size: 0.7rem;
+    flex-shrink: 0;
+}
+
+.gantt-activity-name {
+    flex: 1;
+    font-weight: 500;
+    color: var(--text-color);
+    min-width: 0;
+    font-size: 0.75rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.gantt-duration-badge {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1px 6px;
+    border-radius: 10px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Barra de Gantt */
+.gantt-row-bar {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    position: relative;
+    flex: 1;
+    overflow: visible;
+}
+
+.gantt-bar {
+    height: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+}
+
+.gantt-bar:hover {
+    transform: scaleY(1.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    z-index: 20;
+}
+
+.gantt-bar-date-label {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+}
+
+.gantt-bar:hover .gantt-bar-date-label {
+    opacity: 1;
+}
+
+/* Estados de la barra */
+.gantt-bar-completed {
+    opacity: 0.85;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.gantt-bar-in-progress {
+    animation: progressPulse 2s ease-in-out infinite;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.gantt-bar-in-progress::before {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: rgba(255, 255, 255, 0.9);
+    animation: slideRight 1.5s ease-in-out infinite;
+}
+
+.gantt-bar-pending {
+    opacity: 0.5;
+    border: 1px dashed rgba(255, 255, 255, 0.6);
+}
+
+@keyframes progressPulse {
+    0%, 100% { 
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+    50% { 
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@keyframes slideRight {
+    0% { left: -4px; }
+    100% { left: 100%; }
+}
+
+/* Línea del día actual */
+.gantt-today-line {
+    position: absolute;
+    top: -32px;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--primary-color), transparent);
+    border-left: 1px dashed var(--primary-color);
+    pointer-events: none;
+    z-index: 5;
+    box-shadow: 0 0 8px rgba(0, 102, 204, 0.3);
+}
+
+/* Línea del día seleccionado */
+.gantt-selected-line {
+    position: absolute;
+    top: -32px;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent-color), transparent);
+    border-left: 1px dashed var(--accent-color);
+    pointer-events: none;
+    z-index: 5;
+    box-shadow: 0 0 8px rgba(255, 107, 107, 0.5);
+}
+
+/* Leyenda */
+.gantt-legend {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.gantt-legend h4 {
+    margin: 0 0 0.7rem 0;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+.gantt-legend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 0.7rem;
+}
+
+.gantt-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+}
+
+.gantt-legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .gantt-rows-container {
+        max-height: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gantt-section {
+        padding: 1.5rem;
+    }
+    
+    .gantt-row {
+        height: 40px;
+    }
+    
+    .gantt-row-label {
+        min-width: 150px;
+        gap: 0.3rem;
+    }
+    
+    .gantt-activity-name {
+        font-size: 0.75rem;
+    }
+    
+    .gantt-category-tag {
+        width: 20px;
+        height: 20px;
+        font-size: 0.7rem;
+    }
+    
+    .gantt-bar {
+        height: 20px;
+        font-size: 0.6rem;
+    }
+    
+    .gantt-date-cell {
+        width: 28px;
+        height: 35px;
+        font-size: 0.65rem;
+    }
+    
+    .gantt-legend-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gantt-section {
+        padding: 1rem;
+    }
+    
+    .gantt-row {
+        height: 38px;
+    }
+    
+    .gantt-row-label {
+        min-width: 120px;
+        gap: 0.2rem;
+    }
+    
+    .gantt-activity-name {
+        font-size: 0.7rem;
+    }
+    
+    .gantt-duration-badge {
+        font-size: 0.6rem;
+        padding: 0px 4px;
+    }
+    
+    .gantt-legend-grid {
+        grid-template-columns: 1fr;
+    }
+}
