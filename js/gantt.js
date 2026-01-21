@@ -74,8 +74,15 @@ function createGanttChart(selectedDate = null) {
     // Si se proporciona una fecha seleccionada, calcular su offset
     let selectedOffset = -1;
     if (selectedDate) {
-        const selected = new Date(selectedDate);
-        selected.setHours(0, 0, 0, 0);
+        // Parsear fecha seleccionada en zona horaria local para evitar desfases
+        let selected;
+        if (typeof selectedDate === 'string') {
+            const parts = selectedDate.split('T')[0].split('-');
+            selected = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+        } else {
+            selected = new Date(selectedDate);
+            selected.setHours(0, 0, 0, 0);
+        }
         selectedOffset = Math.floor((selected - minDate) / (1000 * 60 * 60 * 24));
     }
     
