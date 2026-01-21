@@ -85,7 +85,6 @@ function createGanttChart(selectedDate = null) {
             selected.setHours(0, 0, 0, 0);
         }
         selectedOffset = Math.round((selected - minDate) / (1000 * 60 * 60 * 24));
-        console.log('Fecha seleccionada:', selectedDate, '-> offset:', selectedOffset, 'minDate:', minDate.toLocaleDateString(), 'selected:', selected.toLocaleDateString());
     }
     
     // Generar fechas para la cabecera (cada día)
