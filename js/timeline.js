@@ -121,6 +121,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Actualizar el carrusel de imágenes
         updateCarousel(dayId);
+        
+        // Actualizar el Gantt chart para resaltar el día seleccionado
+        if (typeof createGanttChart === 'function') {
+            createGanttChart(selectedDay.date);
+        }
     }
     
     // Función para actualizar el panel de detalles
