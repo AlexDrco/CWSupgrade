@@ -15,12 +15,18 @@ function createGanttChart(selectedDate = null) {
     const activities = ganttData.activities;
     const categories = ganttData.categories;
     
-    // Calcular fechas mín y máx
-    const dates = activities.flatMap(a => [new Date(a.start), new Date(a.end)]);
-    const minDate = new Date(Math.min(...dates));
-    minDate.setHours(0, 0, 0, 0);
-    const maxDate = new Date(Math.max(...dates));
-    maxDate.setHours(0, 0, 0, 0);
+    // Calcular fechas mín y máx basadas solo en fechas de inicio y fin
+    // Crear fechas en zona horaria local para evitar desfases
+    const startDates = activities.map(a => {
+        const parts = a.start.split('-');
+        return new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+    });
+    const endDates = activities.map(a => {
+        const parts = a.end.split('-');
+        return new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+    });
+    const minDate = new Date(Math.min(...startDates));
+    const maxDate = new Date(Math.max(...endDates));
     
     // Obtener fecha actual
     const today = new Date();
@@ -28,10 +34,10 @@ function createGanttChart(selectedDate = null) {
     
     // Actualizar estados basados en fechas reales
     activities.forEach(activity => {
-        const activityEnd = new Date(activity.end);
-        activityEnd.setHours(0, 0, 0, 0);
-        const activityStart = new Date(activity.start);
-        activityStart.setHours(0, 0, 0, 0);
+        const endParts = activity.end.split('-');
+        const activityEnd = new Date(parseInt(endParts[0]), parseInt(endParts[1]) - 1, parseInt(endParts[2]));
+        const startParts = activity.start.split('-');
+        const activityStart = new Date(parseInt(startParts[0]), parseInt(startParts[1]) - 1, parseInt(startParts[2]));
         
         if (activityEnd < today) {
             activity.status = 'completed';
@@ -151,12 +157,17 @@ function createGanttChart(selectedDate = null) {
         bar.className = `gantt-bar gantt-bar-${activity.status}`;
         bar.style.backgroundColor = activity.color;
         
-        // Calcular posición y ancho de la barra
-        const startDaysOffset = Math.floor((new Date(activity.start) - minDate) / (1000 * 60 * 60 * 24));
-        const barWidth = Math.ceil((new Date(activity.end) - new Date(activity.start)) / (1000 * 60 * 60 * 24)) + 1;
+        // Calcular posición y ancho de la barra usando fechas en zona horaria local
+        const startParts = activity.start.split('-');
+        const activityStartDate = new Date(parseInt(startParts[0]), parseInt(startParts[1]) - 1, parseInt(startParts[2]));
+        const endParts = activity.end.split('-');
+        const activityEndDate = new Date(parseInt(endParts[0]), parseInt(endParts[1]) - 1, parseInt(endParts[2]));
+        
+        const startDaysOffset = Math.round((activityStartDate - minDate) / (1000 * 60 * 60 * 24));
+        const barWidth = Math.round((activityEndDate - activityStartDate) / (1000 * 60 * 60 * 24)) + 1;
         
         bar.style.marginLeft = `${startDaysOffset * 24}px`;
-        bar.style.width = `${barWidth * 24 - 3}px`;
+        bar.style.width = `${barWidth * 24 - 1}px`;
         
         // Agregar información al hover
         const dateRange = `${formatDate(activity.start)} - ${formatDate(activity.end)}`;
@@ -182,7 +193,7 @@ function createGanttChart(selectedDate = null) {
     if (displayOffset >= 0 && displayOffset < daysDiff) {
         const highlightLine = document.createElement('div');
         highlightLine.className = selectedOffset >= 0 ? 'gantt-selected-line' : 'gantt-today-line';
-        highlightLine.style.left = `${150 + (displayOffset * 24)}px`;
+        highlightLine.style.left = `${280 + (displayOffset * 24)}px`;
         rowsContainer.appendChild(highlightLine);
     }
     
