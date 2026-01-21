@@ -8,15 +8,14 @@ const projectData = {
             title: "Project Start",
             description: `
                 <h3>Initial Assessment</h3>
-                <p>Today the project to upgrade the CWS 3979 sterilizer began. The technical team performed a comprehensive assessment of the current system status.</p>
+                <p>Today the project to upgrade the CWS 3978 sterilizer began. The technical team performed a comprehensive assessment of the current system status.</p>
                 
                 <h3>Key Findings</h3>
                 <ul>
                     <li>Obsolete control system requiring complete upgrade</li>
                     <li>Mechanical components in good general condition</li>
                     <li>Outdated and unintuitive user interface</li>
-                    <li>Missing parts will be ordered urgently.</li>
-                    <li>Steam valves and actuators repaired, Facilities</li>
+                    <li>Temperature and pressure sensors requiring calibration</li>
                 </ul>
                 
                 <h3>Action Plan</h3>
@@ -42,9 +41,9 @@ const projectData = {
             title: "Component Disassembly",
             description: `
                 <h3>Control System Disassembly</h3>
-                <p>Syntegon team will proceed with the careful disassembly of the old control system. All connections and configurations will be documented to ensure a smooth transition.</p>
+                <p>The technical team proceeded with the careful disassembly of the old control system. All connections and configurations were documented to ensure a smooth transition.</p>
                 
-                <h3>Components to be removed</h3>
+                <h3>Removed Components</h3>
                 <ul>
                     <li>Main control board (S7-315)</li>
                     <li>User interface modules</li>
@@ -54,10 +53,9 @@ const projectData = {
                 </ul>
                 
                 <h3>Preparation for New Components</h3>
-                <p>The compartments that will house the new electronic components being cleaned and prepared.</p>
+                <p>The compartments that will house the new electronic components were cleaned and prepared. The integrity of electrical connections was verified, wiring being identified.</p>
                 
                 <h3>Challenges Encountered</h3>
-                <p>Still waiting for missing parts replacement</p>
                 <p>The main control door was removed to modify the cavity where the new HMI PC will be installed..</p>
             `,
             progress: "11%",
@@ -454,3 +452,109 @@ function getDayImages(dayId) {
     
     return possibleImages;
 }
+
+// ===== DATOS PARA GANTT CHART (ACTIVIDADES Y TIMELINE) =====
+const ganttData = {
+    activities: [
+        {
+            id: 1,
+            name: "Site Visit",
+            category: "preparación",
+            start: "2026-01-20",
+            end: "2026-01-20",
+            duration: 1,
+            status: "completed",
+            color: "#FF6B6B"
+        },
+        {
+            id: 2,
+            name: "Electrical Installation",
+            category: "instalación",
+            start: "2026-01-21",
+            end: "2026-01-27",
+            duration: 5,
+            status: "completed",
+            color: "#4ECDC4"
+        },
+        {
+            id: 3,
+            name: "Startup and Testing",
+            category: "inicio",
+            start: "2026-01-28",
+            end: "2026-01-28",
+            duration: 1,
+            status: "completed",
+            color: "#95E1D3"
+        },
+        {
+            id: 4,
+            name: "IQ Execution",
+            category: "pruebas",
+            start: "2026-01-29",
+            end: "2026-01-29",
+            duration: 1,
+            status: "completed",
+            color: "#45B7D1"
+        },
+        {
+            id: 5,
+            name: "Alarm Test Execution",
+            category: "pruebas",
+            start: "2026-01-30",
+            end: "2026-02-02",
+            duration: 2,
+            status: "completed",
+            color: "#45B7D1"
+        },
+        {
+            id: 6,
+            name: "Computer Test Execution",
+            category: "pruebas",
+            start: "2026-01-30",
+            end: "2026-02-02",
+            duration: 2,
+            status: "completed",
+            color: "#45B7D1"
+        },
+        {
+            id: 7,
+            name: "Temperature, Pressure, Conductivity Calibration",
+            category: "calibración",
+            start: "2026-02-03",
+            end: "2026-02-03",
+            duration: 1,
+            status: "in-progress",
+            color: "#FFA502"
+        },
+        {
+            id: 8,
+            name: "Operational Qualification Execution",
+            category: "calificación",
+            start: "2026-02-03",
+            end: "2026-02-06",
+            duration: 4,
+            status: "in-progress",
+            color: "#6C5CE7"
+        },
+        {
+            id: 9,
+            name: "Temperature Distribution Test Execution",
+            category: "pruebas",
+            start: "2026-02-04",
+            end: "2026-02-05",
+            duration: 2,
+            status: "pending",
+            color: "#45B7D1"
+        }
+    ],
+    
+    // Configuración de categorías para código de color
+    categories: {
+        preparación: { label: "Preparation", color: "#FF6B6B", icon: "📍" },
+        instalación: { label: "Installation", color: "#4ECDC4", icon: "⚙️" },
+        inicio: { label: "Start", color: "#95E1D3", icon: "▶️" },
+        pruebas: { label: "Testing", color: "#45B7D1", icon: "✓" },
+        calibración: { label: "Calibration", color: "#FFA502", icon: "📏" },
+        calificación: { label: "Qualification", color: "#6C5CE7", icon: "📋" }
+    }
+};
