@@ -42,9 +42,9 @@ const projectData = {
             title: "Component Disassembly",
             description: `
                 <h3>Control System Disassembly</h3>
-                <p>The technical team proceeded with the careful disassembly of the old control system. All connections and configurations were documented to ensure a smooth transition.</p>
+                <p>Syntegon team will proceed with the careful disassembly of the old control system. All connections and configurations will be documented to ensure a smooth transition.</p>
                 
-                <h3>Removed Components</h3>
+                <h3>Components to be removed</h3>
                 <ul>
                     <li>Main control board (S7-315)</li>
                     <li>User interface modules</li>
@@ -54,9 +54,10 @@ const projectData = {
                 </ul>
                 
                 <h3>Preparation for New Components</h3>
-                <p>The compartments that will house the new electronic components were cleaned and prepared. The integrity of electrical connections was verified, wiring being identified.</p>
+                <p>The compartments that will house the new electronic components being cleaned and prepared.</p>
                 
                 <h3>Challenges Encountered</h3>
+                <p>Still waiting for missing parts replacement</p>
                 <p>The main control door was removed to modify the cavity where the new HMI PC will be installed..</p>
             `,
             progress: "11%",
