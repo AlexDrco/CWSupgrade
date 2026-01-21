@@ -16,6 +16,7 @@ const projectData = {
                     <li>Mechanical components in good general condition</li>
                     <li>Outdated and unintuitive user interface</li>
                     <li>Missing parts will be ordered urgently.</li>
+                    <li>Steam valves and actuators repaired, Facilities</li>
                 </ul>
                 
                 <h3>Action Plan</h3>
