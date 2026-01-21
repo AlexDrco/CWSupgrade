@@ -1,41 +1,6 @@
 // Archivo principal de JavaScript
 document.addEventListener('DOMContentLoaded', function() {
-    // Forzar la inicialización del primer día
-    if (projectData && projectData.days && projectData.days.length > 0) {
-        const firstDayId = projectData.days[0].id;
-        
-        // Seleccionar el primer día en la línea de tiempo
-        const timelineDays = document.querySelectorAll('.timeline-day');
-        if (timelineDays.length > 0) {
-            timelineDays[0].classList.add('active');
-        }
-        
-        // Actualizar el panel de detalles con el primer día
-        const dayTitle = document.getElementById('day-title');
-        const dayDate = document.getElementById('day-date');
-        const detailsContent = document.getElementById('details-content');
-        
-        if (dayTitle && dayDate && detailsContent) {
-            const firstDay = projectData.days[0];
-            dayTitle.textContent = firstDay.title;
-            
-            // Formatear la fecha con formato completo
-            const dateObj = new Date(firstDay.date);
-            // Use day and month names in English
-            const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-            const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-            
-            const formattedDate = `${daysOfWeek[dateObj.getDay()]}, ${months[dateObj.getMonth()]} ${dateObj.getDate()}, ${dateObj.getFullYear()}`;
-            
-            dayDate.textContent = formattedDate;
-            detailsContent.innerHTML = firstDay.description;
-        }
-        
-        // Forzar la carga del carrusel para el primer día
-        if (typeof updateCarousel === 'function') {
-            updateCarousel(firstDayId);
-        }
-    }
+    // Timeline.js handles day selection and initialization automatically
     // Comprobar si las imágenes existen y crear directorios de ejemplo si es necesario
     checkAndCreateImageDirectories();
     
