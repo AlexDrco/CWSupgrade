@@ -73,9 +73,9 @@ const projectData = {
                 
                 <h3>Installed Components</h3>
                 <ul>
-                    <li>CWS-2025 main controller S7-1500</li>
+                    <li>CWS-3979 main controller S7-1500 on hold waiting replacement</li>
                     <li>Expansion modules for profinet network</li>
-                    <li>S7-1500 expansion modules installed</li>
+                    <li>S7-1500 expansion modules installed, one module missing , waiting replacement</li>
                     <li>New HMI's installed in the dryer area</li>
                 </ul>
                 
