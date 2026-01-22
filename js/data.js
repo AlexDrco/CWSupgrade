@@ -8,14 +8,15 @@ const projectData = {
             title: "Project Start",
             description: `
                 <h3>Initial Assessment</h3>
-                <p>Today the project to upgrade the CWS 3978 sterilizer began. The technical team performed a comprehensive assessment of the current system status.</p>
+                <p>Today the project to upgrade the CWS 3979 sterilizer began. The technical team performed a comprehensive assessment of the current system status.</p>
                 
                 <h3>Key Findings</h3>
                 <ul>
                     <li>Obsolete control system requiring complete upgrade</li>
                     <li>Mechanical components in good general condition</li>
                     <li>Outdated and unintuitive user interface</li>
-                    <li>Temperature and pressure sensors requiring calibration</li>
+                    <li>Missing parts, new ones will be ordered</li>
+                    <li>Steam valve and actuator fixed, Thanks Facilities</li>
                 </ul>
                 
                 <h3>Action Plan</h3>
