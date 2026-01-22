@@ -8,8 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentSlide = 0;
     let slides = [];
     
-    // El carrusel se inicializa desde timeline.js con el día seleccionado por defecto
-    // No es necesario inicializarlo aquí para evitar conflictos
+    // Inicializar el carrusel con el primer día al cargar la página
+    if (projectData && projectData.days && projectData.days.length > 0) {
+        setTimeout(() => {
+            updateCarousel(projectData.days[0].id);
+        }, 100); // Un pequeño retraso para asegurar que todo esté cargado
+    }
     
     // Función para actualizar el carrusel con las imágenes del día seleccionado
     function updateCarousel(dayId) {
