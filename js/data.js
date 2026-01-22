@@ -75,15 +75,16 @@ const projectData = {
                 <ul>
                     <li>CWS-3979 main controller S7-1500 on hold waiting replacement</li>
                     <li>Expansion modules for profinet network</li>
-                    <li>S7-1500 expansion modules installed, one module missing , waiting replacement</li>
+                    <li>S7-1500 expansion modules installed, REPLACEMENTS ARRIVED</li>
                     <li>New HMI's installed in the dryer area</li>
                 </ul>
                 
                 <h3>Implemented Improvements</h3>
                 <p>The new system includes many benefits and capabilities as well as a new generation of more reliable control and communications network.</p>
                 
-                <h3>Next Steps</h3>
-                <p>Tomorrow we will continue the installation and identification of the new controls wiring.</p>
+                <h3>Challenges Encountered</h3>
+                <p>Still waiting for the missing parts, PLC SHOULD ARRIVE FRIDAY MORNING</p>
+                <p>The main control door was removed to modify the cavity where the new HMI PC will be installed..</p>
             `,
             progress: "22%",
             imageFolder: "dia3"
