@@ -91,12 +91,16 @@ document.addEventListener('DOMContentLoaded', function() {
         // Seleccionar el primer día visible por defecto e inicializar el carrusel
         if (visibleDays.length > 0) {
             // Seleccionar el último día visible (el más reciente)
-            selectDay(visibleDays[visibleDays.length - 1].id);
+            const lastDayId = visibleDays[visibleDays.length - 1].id;
+            selectDay(lastDayId);
             
             // Asegurarse de que el carrusel se inicialice correctamente
-            if (typeof updateCarousel === 'function') {
-                updateCarousel(visibleDays[visibleDays.length - 1].id);
-            }
+            // Usar setTimeout para esperar a que updateCarousel esté disponible
+            setTimeout(() => {
+                if (typeof updateCarousel === 'function') {
+                    updateCarousel(lastDayId);
+                }
+            }, 100);
         }
     }
     
