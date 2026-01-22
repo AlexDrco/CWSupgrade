@@ -8,11 +8,27 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentSlide = 0;
     let slides = [];
     
-    // Inicializar el carrusel con el primer día al cargar la página
+    // Inicializar el carrusel con el último día visible al cargar la página
     if (projectData && projectData.days && projectData.days.length > 0) {
         setTimeout(() => {
-            updateCarousel(projectData.days[0].id);
-        }, 100); // Un pequeño retraso para asegurar que todo esté cargado
+            // Obtener la fecha actual para filtrar días visibles
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            
+            // Filtrar los días que son hasta hoy inclusive
+            const visibleDays = projectData.days.filter(day => {
+                const dayDate = new Date(day.date);
+                dayDate.setHours(0, 0, 0, 0);
+                return dayDate <= today;
+            });
+            
+            // Inicializar con el último día visible
+            if (visibleDays.length > 0) {
+                updateCarousel(visibleDays[visibleDays.length - 1].id);
+            } else {
+                updateCarousel(projectData.days[0].id);
+            }
+        }, 100);
     }
     
     // Función para actualizar el carrusel con las imágenes del día seleccionado
