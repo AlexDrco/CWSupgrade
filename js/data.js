@@ -57,6 +57,7 @@ const projectData = {
                 <p>The compartments that will house the new electronic components were cleaned and prepared. The integrity of electrical connections was verified, wiring being identified.</p>
                 
                 <h3>Challenges Encountered</h3>
+                <p>Still waiting for the missing parts, they are already ordered</p>
                 <p>The main control door was removed to modify the cavity where the new HMI PC will be installed..</p>
             `,
             progress: "11%",
