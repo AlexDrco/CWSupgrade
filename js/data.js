@@ -100,11 +100,11 @@ const projectData = {
                 <h3>Installed Components</h3>
                 <ul>
                     <li>CWS-3979 main controller S7-1500 arrived today</li>
-                    <li>CWS-3979 Bridge connectorfor the PLC arrived</li>
+                    <li>CWS-3979 Bridge connector for the PLC arrived</li>
                     <li>Expansion modules for profinet network</li>
                     <li>S7-1500 expansion modules installed</li>
                     <li>New HMI's installed in the dryer area</li>
-                    <li>Door panel delivered</li>
+                    <li>Door panel and PC HMI delivered </li>
                 </ul>
                 
                 <h3>Implemented Improvements</h3>
@@ -112,7 +112,7 @@ const projectData = {
                 
                 <h3>Challenges Encountered</h3>
                 <p>An event occurred again at the steam release valve, causing the area to be evacuated; facilities personnel are inspecting the failure..</p>
-                <p>Syntegon team suspended operations till facilities and EHS releases the area.</p>
+                <p>Syntegon team suspended operations till facilities and EHS releases the area.RESTORED </p>
                 <p>The equipment will be powered up for initial testing and software installation next Monday 26th.</p>
             `,
             progress: "22%",
