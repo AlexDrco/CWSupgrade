@@ -99,11 +99,12 @@ const projectData = {
                 
                 <h3>Installed Components</h3>
                 <ul>
-                    <li>CWS-3979 main controller S7-1500 arrived today, but a bridge connector missing</li>
-                    <li>CWS-3979 Bridge connectorfor the PLC is being located, still pending</li>
+                    <li>CWS-3979 main controller S7-1500 arrived today</li>
+                    <li>CWS-3979 Bridge connectorfor the PLC arrived</li>
                     <li>Expansion modules for profinet network</li>
                     <li>S7-1500 expansion modules installed</li>
                     <li>New HMI's installed in the dryer area</li>
+                    <li>Door panel delivered</li>
                 </ul>
                 
                 <h3>Implemented Improvements</h3>
