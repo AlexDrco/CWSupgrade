@@ -109,7 +109,7 @@ const projectData = {
                 <p>The new system includes many benefits and capabilities as well as a new generation of more reliable control and communications network.</p>
                 
                 <h3>Next Steps</h3>
-                <p>The equipment will be powered up and the software installation will begin on Wednesday 28th..</p>
+                <p>The equipment will be powered up for initial testing and software installation next Monday 26th.</p>
             `,
             progress: "22%",
             imageFolder: "dia4"
