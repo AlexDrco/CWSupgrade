@@ -84,14 +84,16 @@ function createGanttChart(selectedDate = null) {
             selected = new Date(selectedDate);
             selected.setHours(0, 0, 0, 0);
         }
-        selectedOffset = Math.round((selected - minDate) / (1000 * 60 * 60 * 24));
+        selectedOffset = Math.floor((selected - minDate) / (1000 * 60 * 60 * 24));
     }
     
     // Generar fechas para la cabecera (cada día)
-    const daysDiff = Math.ceil((maxDate - minDate) / (1000 * 60 * 60 * 24)) + 1;
-    let currentDate = new Date(minDate);
+    const daysDiff = Math.floor((maxDate - minDate) / (1000 * 60 * 60 * 24)) + 1;
     
     for (let i = 0; i < daysDiff; i++) {
+        // Crear una nueva fecha para cada día, evitando problemas de mutación
+        const currentDate = new Date(minDate.getFullYear(), minDate.getMonth(), minDate.getDate() + i);
+        
         const dateCell = document.createElement('div');
         dateCell.className = 'gantt-date-cell';
         
@@ -120,7 +122,6 @@ function createGanttChart(selectedDate = null) {
         
         dateCell.textContent = currentDate.getDate();
         dateHeaderContainer.appendChild(dateCell);
-        currentDate.setDate(currentDate.getDate() + 1);
     }
     
     timelineHeader.appendChild(dateHeaderContainer);
@@ -171,14 +172,18 @@ function createGanttChart(selectedDate = null) {
         const endParts = activity.end.split('-');
         const activityEndDate = new Date(parseInt(endParts[0]), parseInt(endParts[1]) - 1, parseInt(endParts[2]));
         
-        const startDaysOffset = Math.round((activityStartDate - minDate) / (1000 * 60 * 60 * 24));
-        const barWidth = Math.round((activityEndDate - activityStartDate) / (1000 * 60 * 60 * 24)) + 1;
+        // Calcular offset de días desde minDate (usar floor para evitar desalineación)
+        const startDaysOffset = Math.floor((activityStartDate - minDate) / (1000 * 60 * 60 * 24));
+        // Calcular ancho en días (incluye día de inicio y fin)
+        const barWidth = Math.floor((activityEndDate - activityStartDate) / (1000 * 60 * 60 * 24)) + 1;
         
         bar.style.marginLeft = `${startDaysOffset * 24}px`;
-        bar.style.width = `${barWidth * 24 - 1}px`;
+        bar.style.width = `${barWidth * 24}px`;
         
-        // Agregar información al hover
-        const dateRange = `${formatDate(activity.start)} - ${formatDate(activity.end)}`;
+        // Agregar información al hover usando las fechas ya parseadas correctamente
+        const formattedStart = activityStartDate.toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: '2-digit' });
+        const formattedEnd = activityEndDate.toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: '2-digit' });
+        const dateRange = `${formattedStart} - ${formattedEnd}`;
         const statusText = activity.status === 'completed' ? 'Completed' : 
                           activity.status === 'in-progress' ? 'In Progress' : 'Pending';
         bar.title = `${activity.name}\n${dateRange}\n${activity.duration} days\nStatus: ${statusText}`;
@@ -186,7 +191,8 @@ function createGanttChart(selectedDate = null) {
         // Crear etiqueta de fechas en la barra
         const dateLabel = document.createElement('span');
         dateLabel.className = 'gantt-bar-date-label';
-        dateLabel.textContent = `${new Date(activity.start).getDate()}/${new Date(activity.start).getMonth() + 1}`;
+        // Usar la fecha ya parseada correctamente (activityStartDate) para evitar problemas de zona horaria
+        dateLabel.textContent = `${activityStartDate.getDate()}/${activityStartDate.getMonth() + 1}`;
         bar.appendChild(dateLabel);
         
         barSection.appendChild(bar);
@@ -201,7 +207,8 @@ function createGanttChart(selectedDate = null) {
     if (displayOffset >= 0 && displayOffset < daysDiff) {
         const highlightLine = document.createElement('div');
         highlightLine.className = selectedOffset >= 0 ? 'gantt-selected-line' : 'gantt-today-line';
-        highlightLine.style.left = `${280 + (displayOffset * 24)}px`;
+        // Posicionar la línea en el lado derecho del día (+24px)
+        highlightLine.style.left = `${280 + ((displayOffset + 1) * 24)}px`;
         rowsContainer.appendChild(highlightLine);
     }
     
@@ -247,7 +254,9 @@ function createLegend(categories) {
 }
 
 function formatDate(dateString) {
-    const date = new Date(dateString);
+    // Parsear la fecha en zona horaria local para evitar desfases
+    const parts = dateString.split('-');
+    const date = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
     return date.toLocaleDateString('en-US', { 
         day: 'numeric', 
         month: 'short', 
