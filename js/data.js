@@ -134,12 +134,13 @@ const projectData = {
                     <li>Verifying network performance</li>
                     <li>Client data restore</li>
                     <li>Initial software testing</li>
+                    <li>Software will be transfered to the new control system</li>
                 </ul>
                 <h3>Challenges on this stage</h3>
                 <p>Test each device on the network, debuging stage, wiring verification.</p>
                 
                 <h3>Next Steps</h3>
-                <p>The debug stage and device test execution time will determine how many days of delay will be added. Tomorrow, May 28, there will be a meeting with Syntegon to discuss this delay point and how our schedule will be affected.</p>
+                <p>On track</p>
             `,
             progress: "33%",
             imageFolder: "dia5"
