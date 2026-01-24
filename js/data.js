@@ -121,25 +121,25 @@ const projectData = {
         {
             id: 5,
             date: "2026-01-24T12:00:00",
-            title: "New Hardware Installation Part 3",
-            description: `
-               <h3>Control System Installation</h3>
-                <p>Significative progress in the main panel wiring, back on track </p>
+            title: "It's Alive!! Testing devices",
+           description: `
+                <p>The switch is ON, today testing devices stage began</p>
                 
-                <h3>Installed Components</h3>
+                <h3>Device testing with the equipment powered on began today</h3>
                 <ul>
-                    <li>CWS-3979 main controller S7-1500</li>
-                    <li>Expansion modules for profinet network</li>
-                    <li>S7-1500 expansion modules installed</li>
-                    <li>New HMI's installed in the dryer area</li>
-                    <li>Main panel wiring almost completed</li>
+                    <li>Verifying communication with main controller S7-1500</li>
+                    <li>Verifying communication with remote profinet network nodes</li>
+                    <li>HMI PC Installed </li>
+                    <li>Graph station installed</li>
+                    <li>Verifying network performance</li>
+                    <li>Client data restore</li>
+                    <li>Initial software testing</li>
                 </ul>
-                
                 <h3>Challenges on this stage</h3>
-                <p>Verify UPS backup functioning, new batteries set, ready for install.</p>
+                <p>Test each device on the network, debuging stage, wiring verification.</p>
                 
                 <h3>Next Steps</h3>
-                <p>Main panel wiring almost completed , schedule activities on track, the equipment will be powered up for initial testing and software installation next Monday..</p>
+                <p>The debug stage and device test execution time will determine how many days of delay will be added. Tomorrow, May 28, there will be a meeting with Syntegon to discuss this delay point and how our schedule will be affected.</p>
             `,
             progress: "33%",
             imageFolder: "dia5"
