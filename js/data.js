@@ -167,11 +167,11 @@ const projectData = {
             date: "2026-01-26T12:00:00",
             title: "It's Alive!! Testing devices",
            description: `
-                <p>The switch is ON, today testing and validating protocols stage began</p>
+                <p>The switch is ON, today Validation protocols have started.</p>
                 
-                <h3>IQ Protocols running , Alarm Testing and Computer Testing in progress began today</h3>
+                <h3>IQ Protocols running , Alarm Testing and Computer Testing in progress, Validation protocols have started.</h3>
                 <ul>
-                    <li>Execution IQ protocol began</li>
+                    <li>Execution IQ protocol have started</li>
                     <li>Execution of Alarm Testing</li>
                     <li>Execution of Computer testing</li>
                     <li>Graph station installed</li>
@@ -192,24 +192,24 @@ const projectData = {
             id: 8,
             date: "2026-01-27T12:00:00",
             title: "It's Alive!! Testing devices",
-            description: `
-                <p>The switch is ON, today testing devices stage began</p>
+           description: `
+                <p>The switch is ON, today Validation protocols have started.</p>
                 
-                <h3>Device testing with the equipment powered on began today</h3>
+                <h3>IQ Protocols running , Alarm Testing and Computer Testing in progress, Validation protocols have started.</h3>
                 <ul>
-                    <li>Verifying communication with main controller S7-1500</li>
-                    <li>Verifying communication with remote profinet network nodes</li>
-                    <li>HMI PC Installed </li>
+                    <li>Execution IQ protocol have started</li>
+                    <li>Execution of Alarm Testing</li>
+                    <li>Execution of Computer testing</li>
                     <li>Graph station installed</li>
                     <li>Verifying network performance</li>
                     <li>Client data restore</li>
                     <li>Initial software testing</li>
                 </ul>
                 <h3>Challenges on this stage</h3>
-                <p>Test each device on the network, debuging stage, wiring verification.</p>
+                <p>Complete each protocol and validation process.</p>
                 
                 <h3>Next Steps</h3>
-                <p>The debug stage and device test execution time will determine how many days of delay will be added. Tomorrow, May 28, there will be a meeting with Syntegon to discuss this delay point and how our schedule will be affected.</p>
+                <p>On track</p>
             `,
             progress: "44%",
             imageFolder: "dia8"
