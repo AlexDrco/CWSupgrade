@@ -165,18 +165,26 @@ const projectData = {
         {
             id: 7,
             date: "2026-01-26T12:00:00",
-            title: "New Hardware Installation Part 4",
-            description: `
-                <p>Today the installation of the new control equipment continues..</p>
+            title: "It's Alive!! Testing devices",
+           description: `
+                <p>The switch is ON, today testing devices stage began</p>
                 
-                <h3>Activities..</h3>
-                <p>The installation of equipment in the internal panels is being carried out today, network cabling, installation of touch panels for the dryer area, the challenge today was to begin initial power-on tests, unfortunately this stage has not been possible, a meeting will be scheduled with the Syntegon team to have the details of the delay that could affect the calendar of activities for this project..</p>
-                
+                <h3>Device testing with the equipment powered on began today</h3>
+                <ul>
+                    <li>Verifying communication with main controller S7-1500</li>
+                    <li>Verifying communication with remote profinet network nodes</li>
+                    <li>HMI PC Installed </li>
+                    <li>Graph station installed</li>
+                    <li>Verifying network performance</li>
+                    <li>Client data restore</li>
+                    <li>Initial software testing</li>
+                    <li>Software will be transfered to the new control system</li>
+                </ul>
                 <h3>Challenges on this stage</h3>
-                <p>Check with Syntegon for any possible delay in the schedule of activities.</p>
+                <p>Test each device on the network, debuging stage, wiring verification.</p>
                 
                 <h3>Next Steps</h3>
-                <p>The equipment should be powered up for testing and the software installation hopefully tomorrow afternoon.</p>
+                <p>On track</p>
             `,
             progress: "44%",
             imageFolder: "dia7"
