@@ -217,25 +217,22 @@ const projectData = {
         {
             id: 9,
             date: "2026-01-28T12:00:00",
-            title: "Testing Devices Part 2",
+            title: "Finalizing IQ",
             description: `
-                <p>Testing devices and debugging stage continues</p>
+                <p>IQ procotols finishing and OQ protocols starting</p>
                 
                 <h3>Device testing and debugging </h3>
                 <ul>
                     <li>Alarms testing and clearing</li>
                     <li>Verifying communication with main controller S7-1500</li>
                     <li>Verifying communication with remote profinet network nodes</li>
-                    <li>HMI PC Installed </li>
-                    <li>Graph station installed</li>
-                    <li>Verifying network performance</li>
-                    <li>No more red lights in communication network</li>
+                   
                 </ul>
                 <h3>Challenges on this stage</h3>
-                <p>Test each device on the network, debugging stage, alarms being tested and cleared.</p>
+                <p>Complete IQ and prepare for OQ </p>
                 
                 <h3>Next Steps</h3>
-                <p>According with Syntegon meeting today, We will have 4 days of delay over the original schedule. So, Please take the necessary measures regarding this delay in the schedule.</p>
+                <p>On track.</p>
             `,
             progress: "56%",
             imageFolder: "dia9"
