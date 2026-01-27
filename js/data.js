@@ -206,7 +206,7 @@ const projectData = {
                     <li>Initial software testing</li>
                 </ul>
                 <h3>Challenges on this stage</h3>
-                <p>Repairs to the main conveyor needed, Complete each protocol and validation process.</p>
+                <p>Repairs to the main conveyor needed, maintenace team working on it, Complete each protocol and validation process.</p>
                 
                 <h3>Next Steps</h3>
                 <p>On track</p>
