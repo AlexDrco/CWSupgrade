@@ -219,7 +219,7 @@ const projectData = {
             date: "2026-01-28T12:00:00",
             title: "Finalizing IQ",
             description: `
-                <p>IQ procotols finishing and OQ protocols starting</p>
+                <p>IQ procotols finishing, Alarm and computer protocols starting</p>
                 
                 <h3>Device testing and debugging </h3>
                 <ul>
