@@ -224,12 +224,12 @@ const projectData = {
                 <h3>Device testing and debugging </h3>
                 <ul>
                     <li>Alarms testing and clearing</li>
-                    <li>Verifying communication with main controller S7-1500</li>
+                    <li>Computer testing</li>
                     <li>Verifying communication with remote profinet network nodes</li>
                    
                 </ul>
                 <h3>Challenges on this stage</h3>
-                <p>Complete IQ and prepare for OQ </p>
+                <p>Complete IQ, Alarms and computer testing, Prepare for OQ </p>
                 
                 <h3>Next Steps</h3>
                 <p>On track.</p>
@@ -240,21 +240,21 @@ const projectData = {
         {
             id: 10,
             date: "2026-01-29T12:00:00",
-            title: "Testing Devices Part 3",
+            title: "Finishing with IQ, Alarm and computer protocols",
             description: `
                 <p>Testing devices and debugging stage continues</p>
                 
                 <h3>Devices testing and debugging </h3>
                 <ul>
                     <li>Very good progress in clearing Alarms</li>
-                    <li>Confined space permit granted</li>
+                    <li>Computer testing</li>
                     <li>WCS chamber sensor verification</li>
                 </ul>
                 <h3>Challenges on this stage</h3>
                 <p>Test each device on the system, debugging stage, alarms being tested and cleared.</p>
                 
                 <h3>Next Steps</h3>
-                <p>Please schedule your activities according with the 3 days of delay over the original schedule.</p>
+                <p>On track.</p>
             `,
             progress: "56%",
             imageFolder: "dia10"
