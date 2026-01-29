@@ -251,7 +251,7 @@ const projectData = {
                     <li>WCS chamber sensor verification</li>
                 </ul>
                 <h3>Challenges on this stage</h3>
-                <p>CWS3978 required service on the dryer output conveyor, fixed , images attached</p>
+                <p>CWS3978 required service on the dryer output conveyor fixed, servo  motor controller overcurrent tripped restored, images attached</p>
                 
                 <h3>Next Steps</h3>
                 <p>On track.</p>
