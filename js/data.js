@@ -251,7 +251,7 @@ const projectData = {
                     <li>WCS chamber sensor verification</li>
                 </ul>
                 <h3>Challenges on this stage</h3>
-                <p>Test each device on the system, debugging stage, alarms being tested and cleared.</p>
+                <p>CWS3978 required service on the dryer output conveyor, fixed , images attached</p>
                 
                 <h3>Next Steps</h3>
                 <p>On track.</p>
@@ -262,11 +262,11 @@ const projectData = {
        {
             id: 11,
             date: "2026-01-30T12:00:00",
-            title: "PRE-qualification tests Being performed",
+            title: "Alarm and computer testing protocols will be finished today",
             description: `
-           <p>Prequalification in process to prepare machine for IQ on Monday</p>
+           <p>OQ protocol preparation</p>
                 
-                <h3>Devices testing and debugging </h3>
+                <h3>Finishing  Alarm and computer protocols </h3>
                 <ul>
                     <li>Alarms were cleared!!</li>
                     <li>Confined space permit granted</li>
@@ -274,10 +274,10 @@ const projectData = {
                     <li>Cyles for Prequalification stage will begin</li>
                 </ul>
                 <h3>Challenges on this stage</h3>
-                <p>Pre-qualification stage TODAY, With the progress shown today, the delay in the schedule has been considerably reduced to only 1 or 2 days.</p>
+                <p>OQ preparation.</p>
                 
                 <h3>Next Steps</h3>
-                <p>IQ will be performed on Monday</p>
+                <p>On track</p>
             `,
             progress: "67%",
             imageFolder: "dia11"
