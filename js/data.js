@@ -262,7 +262,7 @@ const projectData = {
        {
             id: 11,
             date: "2026-01-30T12:00:00",
-            title: "Alarm and computer testing protocols will be finished today",
+            title: "Alarm and computer testing protocols finished today",
             description: `
            <p>OQ protocol preparation</p>
                 
