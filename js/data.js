@@ -317,7 +317,7 @@ const projectData = {
         {
             id: 14,
             date: "2026-02-02T12:00:00",
-            title: "OQ Phase - Part 1",
+            title: "OQ Phase ",
             description: `
                 <h3>Operational Qualification Begins</h3>
                 <p>Starting the OQ phase to verify all operational parameters and performance criteria.</p>
@@ -338,10 +338,10 @@ const projectData = {
         {
             id: 15,
             date: "2026-02-03T12:00:00",
-            title: "OQ Phase - Part 2",
+            title: "OQ Ending",
             description: `
-                <h3>Operational Qualification Continues</h3>
-                <p>Continuation of operational tests with extended cycle durations and stress testing.</p>
+                <h3>Operational Qualification</h3>
+                <p>Temperature mapping in progress...</p>
                 
                 <h3>Test Results</h3>
                 <ul>
@@ -351,15 +351,15 @@ const projectData = {
                 </ul>
                 
                 <h3>Status</h3>
-                <p>OQ phase progressing on schedule.</p>
+                <p>On Track</p>
             `,
-            progress: "89%",
+            progress: "90%",
             imageFolder: "dia15"
         },
         {
             id: 16,
             date: "2026-02-04T12:00:00",
-            title: "OQ Phase - Part 3",
+            title: "OQ .....",
             description: `
                 <h3>Final OQ Testing</h3>
                 <p>Final validation tests and acceptance criteria verification.</p>
@@ -375,27 +375,27 @@ const projectData = {
                 <h3>Status</h3>
                 <p>Ready for PQ (Performance Qualification) phase.</p>
             `,
-            progress: "89%",
+            progress: "95%",
             imageFolder: "dia12"
         },
         {
             id: 17,
             date: "2026-02-05T12:00:00",
-            title: "PQ Phase - Performance Qualification",
+            title: "Project Completion - Delivery",
             description: `
-                <h3>Performance Qualification Phase</h3>
-                <p>Final validation phase with full operational cycles and documentation.</p>
+                <h3>CWS 3979 Controls Upgrade Complete!</h3>
+                <p>The controls upgrade project has been successfully completed. The sterilizer is now operational with the new control system.</p>
                 
-                <h3>PQ Activities</h3>
+                <h3>Project Summary</h3>
                 <ul>
-                    <li>Extended performance testing</li>
-                    <li>Final documentation review</li>
-                    <li>System certification preparation</li>
-                    <li>Handover to operations team</li>
+                    <li>New S7-1500 control system fully operational</li>
+                    <li>All qualifications completed and documented</li>
+                    <li>Staff trained on new interface</li>
+                    <li>System handed over to operations</li>
                 </ul>
                 
-                <h3>Status</h3>
-                <p>Near completion. Final validation in progress.</p>
+                <h3>Final Status</h3>
+                <p>Project complete and ready for production use.</p>
             `,
             progress: "100%",
             imageFolder: "dia12"
