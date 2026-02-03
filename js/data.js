@@ -340,8 +340,8 @@ const projectData = {
             date: "2026-02-03T12:00:00",
             title: "OQ finished",
             description: `
-                <h3>Operational Qualification</h3>
-                <p>Temperature mapping finished...</p>
+                <h3>Operational Qualification done</h3>
+                <p>Temperature mapping done</p>
                 
                 <h3>Test Results</h3>
                 <ul>
@@ -351,7 +351,7 @@ const projectData = {
                 </ul>
                 
                 <h3>Status</h3>
-                <p>On Track</p>
+                <p>Upgrade project completed..</p>
             `,
             progress: "95%",
             imageFolder: "dia15"
@@ -373,7 +373,7 @@ const projectData = {
                 </ul>
                 
                 <h3>Final Status</h3>
-                <p>Project complete and ready for production use.</p>
+                <p>Project complete .</p>
             `,
             progress: "100%",
             imageFolder: "dia12"
@@ -395,7 +395,7 @@ const projectData = {
                 </ul>
                 
                 <h3>Final Status</h3>
-                <p>Project complete and ready for production use.</p>
+                <p>Project complete </p>
             `,
             progress: "100%",
             imageFolder: "dia12"
@@ -417,7 +417,7 @@ const projectData = {
                 </ul>
                 
                 <h3>Final Status</h3>
-                <p>Project complete and ready for production use.</p>
+                <p>Project complete </p>
             `,
             progress: "100%",
             imageFolder: "dia12"
