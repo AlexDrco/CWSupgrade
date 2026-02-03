@@ -338,10 +338,10 @@ const projectData = {
         {
             id: 15,
             date: "2026-02-03T12:00:00",
-            title: "OQ Ending",
+            title: "OQ finished",
             description: `
                 <h3>Operational Qualification</h3>
-                <p>Temperature mapping in progress...</p>
+                <p>Temperature mapping finished...</p>
                 
                 <h3>Test Results</h3>
                 <ul>
@@ -353,35 +353,35 @@ const projectData = {
                 <h3>Status</h3>
                 <p>On Track</p>
             `,
-            progress: "90%",
+            progress: "95%",
             imageFolder: "dia15"
         },
         {
             id: 16,
             date: "2026-02-04T12:00:00",
-            title: "OQ .....",
+            title: "Project Completion - Delivery",
             description: `
-                <h3>Final OQ Testing</h3>
-                <p>Final validation tests and acceptance criteria verification.</p>
+                <h3>CWS 3979 Controls Upgrade Complete!</h3>
+                <p>The controls upgrade project has been successfully completed. The sterilizer is now operational with the new control system.</p>
                 
-                <h3>Validation Checklist</h3>
+                <h3>Project Summary</h3>
                 <ul>
-                    <li>Performance parameters verified</li>
-                    <li>Safety systems validated</li>
-                    <li>Data logging confirmed</li>
-                    <li>User training materials completed</li>
+                    <li>New S7-1500 control system fully operational</li>
+                    <li>All qualifications completed and documented</li>
+                    <li>Staff trained on new interface</li>
+                    <li>System handed over to operations</li>
                 </ul>
                 
-                <h3>Status</h3>
-                <p>Ready for PQ (Performance Qualification) phase.</p>
+                <h3>Final Status</h3>
+                <p>Project complete and ready for production use.</p>
             `,
-            progress: "95%",
+            progress: "100%",
             imageFolder: "dia12"
         },
         {
             id: 17,
             date: "2026-02-05T12:00:00",
-            title: "Project Completion - Delivery",
+             title: "Project Completion - Delivery",
             description: `
                 <h3>CWS 3979 Controls Upgrade Complete!</h3>
                 <p>The controls upgrade project has been successfully completed. The sterilizer is now operational with the new control system.</p>
